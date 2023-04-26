@@ -8,10 +8,10 @@ spec:
   rules:
   - http:
       paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: ww-gitops-weave-gitops
-            port:
-              number: 80
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: ww-gitops-weave-gitops
+              port:
+                number: 9001
